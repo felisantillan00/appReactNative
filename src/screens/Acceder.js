@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import HeaderNav from '../components/organisms/HeaderNav'; // Importamos el encabezado
-import styles from '../style/StyleEnVenta';
+
 // EnVenta es la pantalla principal
 const EnVenta = ({ navigation }) => {
     return (
@@ -13,5 +13,18 @@ const EnVenta = ({ navigation }) => {
         </View>
     );
 };
+
+// Estilos para la pantalla Home
+const styles = StyleSheet.create({
+    container: {
+        flex: 1, // Ocupa todo el espacio disponible en la pantalla
+    },
+    content: {
+        textAlign: 'center', // Centra el texto
+        fontSize: 20, // Tamaño de la fuente
+        marginTop: 20, // Separación superior
+    },
+});
+
 export default EnVenta; // Asegúrate de exportar con la letra mayúscula
 
