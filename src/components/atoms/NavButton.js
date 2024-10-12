@@ -1,5 +1,5 @@
+import { TouchableOpacity, Text} from 'react-native';
 import React from 'react';
-import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 import styles from '../../style/StyleNavButton';
 // NavButton es un botón reutilizable. Recibe un título (texto del botón) y una función onPress (qué hacer cuando el botón es presionado).
 const NavButton = ({ title, onPress }) => {

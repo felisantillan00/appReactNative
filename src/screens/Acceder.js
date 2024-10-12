@@ -2,8 +2,8 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import HeaderNav from '../components/organisms/HeaderNav'; // Importamos el encabezado
 
-// EnVenta es la pantalla principal
-const EnVenta = ({ navigation }) => {
+// Acceder es la pantalla principal
+const Acceder = ({ navigation }) => {
     return (
         <View style={styles.container}>
             {/* Mostramos el encabezado y pasamos el navigation para la barra de navegación */}
@@ -26,5 +26,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default EnVenta; // Asegúrate de exportar con la letra mayúscula
-
+export default Acceder; // Asegúrate de exportar con la letra mayúscula

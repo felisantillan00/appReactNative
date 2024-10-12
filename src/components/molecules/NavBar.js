@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import {View} from 'react-native';
 import NavButton from '../atoms/NavButton'; // Importamos el átomo NavButton
 import styles from '../../style/StyleNavBar';
 // NavBar es una molécula que junta varios botones y organiza su distribución en la pantalla.

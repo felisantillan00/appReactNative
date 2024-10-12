@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text} from 'react-native';
 import NavBar from '../molecules/NavBar'; // Importamos la barra de navegación
 import styles from '../../style/StyleHeaderNav';
 // HeaderNav combina el título de la app con la barra de navegación

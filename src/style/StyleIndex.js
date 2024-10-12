@@ -1,14 +1,16 @@
-// Estilos para la pantalla Home
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1, // Ocupa todo el espacio disponible en la pantalla
+        flex: 4,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#fff',
     },
     content: {
-        textAlign: 'center', // Centra el texto
-        fontSize: 20, // Tamaño de la fuente
-        marginTop: 20, // Separación superior
+        fontSize: 16,
+        color: '#333',
     },
 });
+
 export default styles;
