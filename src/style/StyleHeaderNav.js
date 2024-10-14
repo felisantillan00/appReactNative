@@ -1,18 +1,23 @@
 import { StyleSheet } from 'react-native';
-
 // Estilos para el encabezado
 const styles = StyleSheet.create({
-    header: {
-        paddingTop: 40, // Espacio en la parte superior (útil para separar de la barra de estado)
-        backgroundColor: '#34495e', // Color de fondo para el encabezado
-        justifyContent: 'flex-end', // Coloca la barra de navegación en la parte inferior
+    navContainer: {
+        position: 'absolute',  // Para fijar en la parte inferior
+        bottom: 0,
+        left: 0,
+        right: 0,
+        height: 60,            // Ajusta la altura de la botonera
+        backgroundColor: '#34495e',
+        flexDirection: 'row',  // Coloca los botones en línea
+        justifyContent: 'space-around',  // Espacia los botones de manera uniforme
+        alignItems: 'center',  // Centra los botones verticalmente
     },
-    title: {
-        fontSize: 24, // Tamaño de la fuente del título
-        color: '#fff', // El color del texto es blanco
-        textAlign: 'center', // El título está centrado
-        padding: 10, // Espaciado alrededor del título
+    navButton: {
+        padding: 10,
+    },
+    navText: {
+        color: '#fff',
+        fontSize: 16,
     },
 });
-
 export default styles;

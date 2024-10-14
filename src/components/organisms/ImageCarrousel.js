@@ -1,7 +1,7 @@
-import {View, Animated, Dimensions, Image, Text} from 'react-native';
+import { View, Animated, Dimensions, Image, Text } from 'react-native';
 import React from 'react';
 import styles from '../../style/StyleImageCarousel'; // o donde tengas los estilos de este componente
-const {width} = Dimensions.get('window');
+const { width } = Dimensions.get('window');
 const ANCHO_CONTENEDOR = width * 0.7;
 const ESPACIO_CONTENEDOR = (width - ANCHO_CONTENEDOR) / 2;
 const ImageCarousel = ({ scrollX, images }) => {
@@ -34,7 +34,7 @@ const ImageCarousel = ({ scrollX, images }) => {
                         outputRange: [0, -50, 0],
                     });
                     return (
-                        <View style={{ width: ANCHO_CONTENEDOR }}>
+                        <View style={{ width: ANCHO_CONTENEDOR, overflow: 'hidden' }}>
                             <Animated.View style={[styles.carouselItem, { transform: [{ translateY }] }]}>
                                 <Image source={{ uri: item.uri }} style={styles.image} />
                                 <Text style={styles.title}>{item.title}</Text>

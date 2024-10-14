@@ -2,7 +2,6 @@ import React from 'react';
 import {Animated, Dimensions, StyleSheet} from 'react-native';
 const { width, height } = Dimensions.get('window');
 const ITEM_WIDTH = width * 0.7;
-
 const Backdrop = ({ data, scrollX }) => {
     return (
         <View style={[StyleSheet.absoluteFillObject, { height: height * 0.6, width }]}>

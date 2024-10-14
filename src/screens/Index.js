@@ -5,7 +5,7 @@ import HeaderNav from '../components/organisms/HeaderNav'; // Importamos el enca
 import styles from '../style/StyleIndex';
 
 // Index es la pantalla principal
-const Index = ({ navigation }) => {
+const Index = ({}) => {
     // Definimos scrollX para el carrusel
     const scrollX = new Animated.Value(0); 
     // Lista de imágenes para el carrusel
@@ -16,14 +16,13 @@ const Index = ({ navigation }) => {
         { uri: "https://images.unsplash.com/photo-1525183995014-bd94c0750cd5", title: "Imagen 4" },
     ];
     return (
-        <View style={[styles.container, { flex: 4 }]}>
+        <View style={styles.container}>
             {/* Carrusel de Imágenes */}
-            <ImageCarousel scrollX={scrollX} images={images} />
-            {/* Navegación Encabezado */}
-            <HeaderNav navigation={navigation} />
-            {/* Mensaje de texto */}
-            <Text style={styles.content}>This is the Home Screen</Text>
-            {/* Aquí puedes añadir más contenido si lo necesitas */}
+            <View style={styles.carouselContainer}>
+                <ImageCarousel scrollX={scrollX} images={images} />
+            </View>
+            {/* Barra de Navegación en la parte inferior */}
+            <HeaderNav />
         </View>
     );
 };

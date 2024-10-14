@@ -13,5 +13,4 @@ const NavBar = ({ navigation }) => {
         </View>
     );
 };
-
 export default NavBar;

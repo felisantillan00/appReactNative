@@ -10,5 +10,4 @@ const styles = StyleSheet.create({
         marginTop: 20, // Separación superior
     },
 });
-
 export default styles;
