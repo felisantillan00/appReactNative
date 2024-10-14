@@ -1,16 +1,16 @@
-// components/molecules/CarouselItem.js
 import React from 'react';
-import {Animated} from 'react-native';
-import CustomImage from '../atoms/Image';
-import CustomText from '../atoms/Text';
-import styles from '../../style/StyleCarrouselItem';
+import { View } from 'react-native';
+import CarouselImage from '../atoms/CarouselImage';
+import CarouselIndicator from '../atoms/CarouselIndicator';
 
-const CarouselItem = ({ uri, title, translateY }) => {
+const CarouselItem = ({ imageSource, isActive }) => {
     return (
-        <Animated.View style={[styles.card, { transform: [{ translateY }] }]}>
-            <CustomImage uri={uri} />
-            <CustomText>{title}</CustomText>
-        </Animated.View>
+        <View>
+            {/* Componente que muestra la imagen */}
+            <CarouselImage source={imageSource} />
+            {/* Componente que muestra el indicador de posición */}
+            <CarouselIndicator isActive={isActive} />
+        </View>
     );
 };
 export default CarouselItem;

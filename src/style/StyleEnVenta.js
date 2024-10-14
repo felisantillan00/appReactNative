@@ -1,5 +1,5 @@
 /* Estilos para la pantalla Home */
-import { StyleSheet } from 'react-native';
+import {StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
     container: {
         flex: 1, // Ocupa todo el espacio disponible en la pantalla

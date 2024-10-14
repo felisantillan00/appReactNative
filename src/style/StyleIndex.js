@@ -14,15 +14,5 @@ const styles = StyleSheet.create({
         height: '100%',
         resizeMode: 'cover',
     },
-    navBar: {
-        position: 'absolute',
-        bottom: 0,
-        left: 0,
-        right: 0,
-        height: 60,
-        backgroundColor: '#34495e',
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
 });
 export default styles;
