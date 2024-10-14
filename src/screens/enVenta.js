@@ -1,17 +1,13 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import HeaderNav from '../components/organisms/HeaderNav'; // Importamos el encabezado
-import styles from '../style/StyleEnVenta';
-// EnVenta es la pantalla principal
-const EnVenta = ({ navigation }) => {
+import { View, Text } from 'react-native';
+
+const EnVenta = () => {
     return (
-        <View style={styles.container}>
-            {/* Mostramos el encabezado y pasamos el navigation para la barra de navegación */}
-            <HeaderNav navigation={navigation} />
-            {/* Contenido de la pantalla */}
-            <Text style={styles.content}>This is the Home Screen</Text>
+        <View>
+            <Text>Pantalla En Venta</Text>
         </View>
     );
 };
-export default EnVenta; // Asegúrate de exportar con la letra mayúscula
+
+export default EnVenta;
 

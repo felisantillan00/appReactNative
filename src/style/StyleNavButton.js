@@ -2,13 +2,19 @@ import { StyleSheet } from 'react-native';
 // Estilos del botón
 const styles = StyleSheet.create({
     button: {
-        padding: 10, // Espaciado interno del botón
-        backgroundColor: '#3498db', // Color de fondo azul
-        borderRadius: 5, // Bordes redondeados
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 10,
+        marginHorizontal: 15,
+        borderWidth: 2, // Grosor del borde
+        borderColor: '#000', // Color del borde, puedes cambiarlo según prefieras
+        borderRadius: 10, // Redondeo de las esquinas
+        backgroundColor: '#f9f9f9', // Fondo del botón, si lo necesitas
     },
-    text: {
-        color: '#fff', // El texto es blanco
-        fontSize: 16, // Tamaño de la fuente
+    image: {
+        width: 20,
+        height: 20,
+        resizeMode: 'contain',
     },
 });
 export default styles;
