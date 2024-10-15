@@ -1,11 +1,12 @@
-import {View} from 'react-native';
+import {View} from 'react-native'; // Asegúrate de importar Text
 import React from 'react';
 import Carousel from '../components/organisms/Carousel';
 import HeaderNav from '../components/organisms/HeaderNav'; // Importamos el encabezado
-import styles from '../style/StyleIndex';
+import styles from '../style/StyleScreenIndex';
+import styleContainer from '../style/StyleContainer'
 
 // Index es la pantalla principal
-const Index = () => {
+const Index = ({ navigation }) => {
     // Lista de imágenes para el carrusel
     const images = [
         "https://images.unsplash.com/photo-1559494007-9f5847c49d94",
@@ -14,16 +15,16 @@ const Index = () => {
         "https://images.unsplash.com/photo-1525183995014-bd94c0750cd5",
     ];
     return (
-        <View style={styles.container}>
+        <View style={styleContainer.container}>
             {/* Carrusel de Imágenes */}
             <View style={styles.carouselContainer}>
                 {/* Aquí llamamos al carrusel */}
                 <Carousel images={images} /> 
             </View>
             {/* Barra de Navegación en la parte inferior */}
-            <HeaderNav />
+            <HeaderNav navigation={navigation} />
+            {/* Asegúrate de envolver cualquier texto en un componente Text */}
         </View>
     );
 };
-
 export default Index;

@@ -1,10 +1,18 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import { View, Text } from 'react-native';
+import { WebView } from 'react-native-webview';
 
-const Dolar = () => {
+import HeaderNav from '../components/organisms/HeaderNav'; // Importamos el encabezado
+import styles from '../style/StyleScreenDolar';
+import styleContainer from '../style/StyleContainer'
+
+const Dolar = ({ navigation }) => {
     return (
-        <View>
-            <Text>Pantalla En Venta</Text>
+        <View style={styles.container}>
+            <WebView
+                source={{ uri: 'https://dolarhoy.com/i/cotizaciones/dolar-bancos-y-casas-de-cambio' }}
+                style={{ width: 320, height: 260 }}
+            />
         </View>
     );
 };
