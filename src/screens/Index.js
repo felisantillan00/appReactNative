@@ -13,7 +13,6 @@ const Index = () => {
         "https://images.unsplash.com/photo-1505118380757-91f5f5632de0",
         "https://images.unsplash.com/photo-1525183995014-bd94c0750cd5",
     ];
-
     return (
         <View style={styles.container}>
             {/* Carrusel de Imágenes */}

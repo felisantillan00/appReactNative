@@ -8,5 +8,4 @@ const Acceder = () => {
         </View>
     );
 };
-
 export default Acceder;

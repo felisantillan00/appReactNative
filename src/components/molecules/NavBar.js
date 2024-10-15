@@ -9,6 +9,7 @@ const NavBar = ({ navigation }) => {
         <View style={styles.navbar}>
             {/* Creamos dos botones que navegan a las pantallas Home y About */}
             <NavButton imageSource={require('../../img/EnVentaIcon.png')} onPress={() => navigation.navigate('EnVenta')} />
+            <NavButton imageSource={require('../../img/Dolar.png')} onPress={() => navigation.navigate('Dolar')} />
             <NavButton imageSource={require('../../img/EnAlquilerIconOp1.png')} onPress={() => navigation.navigate('EnAlquiler')} />
             <NavButton imageSource={require('../../img/SignUpIcon.png')} onPress={() => navigation.navigate('Acceder')} />
         </View>

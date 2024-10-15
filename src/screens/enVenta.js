@@ -8,6 +8,5 @@ const EnVenta = () => {
         </View>
     );
 };
-
 export default EnVenta;
 

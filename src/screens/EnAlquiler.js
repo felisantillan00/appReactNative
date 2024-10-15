@@ -8,5 +8,4 @@ const EnAlquiler = () => {
         </View>
     );
 };
-
 export default EnAlquiler;
