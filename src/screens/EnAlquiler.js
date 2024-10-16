@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import HeaderNav from '../components/organisms/HeaderNav'; // Importamos el encabezado
 import styles from '../style/StyleScreenEnAlquiler';
-import styleContainer from '../style/StyleContainer'
+import styleContainer from '../style/StyleScreenContainer'
 
 const EnAlquiler = ({navigation}) => {
     return (

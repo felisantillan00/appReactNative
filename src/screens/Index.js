@@ -3,7 +3,7 @@ import React from 'react';
 import Carousel from '../components/organisms/Carousel';
 import HeaderNav from '../components/organisms/HeaderNav'; // Importamos el encabezado
 import styles from '../style/StyleScreenIndex';
-import styleContainer from '../style/StyleContainer'
+import styleContainer from '../style/StyleScreenContainer'
 
 // Index es la pantalla principal
 const Index = ({ navigation }) => {

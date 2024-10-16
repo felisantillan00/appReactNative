@@ -8,8 +8,8 @@ const styles = StyleSheet.create({
         marginHorizontal: 15,
         borderWidth: 2, // Grosor del borde
         borderColor: '#000', // Color del borde, puedes cambiarlo según prefieras
-        borderRadius: 10, // Redondeo de las esquinas
-        backgroundColor: '#f9f9f9', // Fondo del botón, si lo necesitas
+        borderRadius: 100, // Redondeo de las esquinas
+        backgroundColor: '#98FF98', // Fondo del botón, si lo necesitas
     },
     image: {
         width: 20,
