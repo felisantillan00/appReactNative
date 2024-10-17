@@ -1,7 +1,7 @@
 import {View} from 'react-native'; // Asegúrate de importar Text
 import React from 'react';
 import Carousel from '../components/organisms/Carousel';
-import HeaderNav from '../components/organisms/HeaderNav'; // Importamos el encabezado
+import FooterNav from '../components/organisms/FooterNav'; // Importamos el encabezado
 import styles from '../style/StyleScreenIndex';
 import styleContainer from '../style/StyleScreenContainer'
 
@@ -22,7 +22,7 @@ const Index = ({navigation, route}) => {
                 <Carousel images={images} /> 
             </View>
             {/* Barra de Navegación en la parte inferior */}
-            <HeaderNav navigation={navigation} route={route} />
+            <FooterNav navigation={navigation} route={route} />
             {/* Asegúrate de envolver cualquier texto en un componente Text */}
         </View>
     );

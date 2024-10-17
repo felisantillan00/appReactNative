@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import FooterNav from '../components/organisms/FooterNav'; // Importamos el encabezado
-import styles from '../style/StyleScreenEnVenta';
+import styles from '../style/StyleScreenPerfil';
 import styleContainer from '../style/StyleScreenContainer'
 
-const EnVenta = ({navigation, route}) => {
+const Perfil = ({navigation, route}) => {
     return (
         <View style={styleContainer.container}>
             <Text>Pantalla En Venta</Text>
@@ -13,5 +13,4 @@ const EnVenta = ({navigation, route}) => {
         </View>
     );
 };
-export default EnVenta;
-
+export default Perfil;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import HeaderNav from '../components/organisms/HeaderNav'; // Importamos el encabezado
+import FooterNav from '../components/organisms/FooterNav'; // Importamos el encabezado
 import styles from '../style/StyleScreenEnAlquiler';
 import styleContainer from '../style/StyleScreenContainer'
 
@@ -9,7 +9,7 @@ const EnAlquiler = ({navigation, route}) => {
         <View style={styleContainer.container}>
             <Text>Pantalla En Venta</Text>
             {/* Barra de Navegación en la parte inferior */}
-            <HeaderNav navigation={navigation} route={route} />
+            <FooterNav navigation={navigation} route={route} />
         </View>
     );
 };

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {View, Text} from 'react-native';
 import axios from 'axios';
-import HeaderNav from '../components/organisms/HeaderNav'; // Importamos el encabezado
+import FooterNav from '../components/organisms/FooterNav'; // Importamos el encabezado
 import DolarView from '../components/organisms/DolarView';
 import styles from '../style/StyleScreenDolar';
 import stylesContainer from '../style/StyleScreenContainer';
@@ -46,7 +46,7 @@ const Dolar = ({navigation, route}) => {
                     dolarBlue={{ ...dolarBlue.valor, fecha: formatFecha(dolarBlue.fecha) }}
                 />
             )}
-            <HeaderNav navigation={navigation} route={route} />
+            <FooterNav navigation={navigation} route={route} />
         </View>
     );
 };
