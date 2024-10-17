@@ -4,17 +4,17 @@ import Index from '../screens/Index'; // Pantalla Home
 import EnVenta from '../screens/EnVenta';
 import EnAlquiler from '../screens/EnAlquiler';
 import Acceder from '../screens/Acceder';
-import Dolar from '../screens/Dolar'
+import Dolar from '../screens/Dolar';
+
 // Creamos una instancia del stack
 const Stack = createNativeStackNavigator(); 
-// StackNavigator define las rutas o pantallas de la app
 const StackNavigator = () => {
     return (
-        <Stack.Navigator>
+        <Stack.Navigator initialRouteName="Index">
             {/* Definimos las pantallas y el nombre de la ruta para cada una */}
-            <Stack.Screen name="Inmobiliaria Rimoldi" component={Index} />
             <Stack.Screen name="Dolar" component={Dolar} />
             <Stack.Screen name="EnVenta" component={EnVenta} />
+            <Stack.Screen name="Index" component={Index} options={{ title: 'Inmobiliaria Rimoldi' }} />
             <Stack.Screen name="EnAlquiler" component={EnAlquiler} />
             <Stack.Screen name="Acceder" component={Acceder} />
         </Stack.Navigator>

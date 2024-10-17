@@ -1,28 +1,26 @@
-// import React from 'react';
-// import {View} from 'react-native';
-// import NavButton from '../atoms/NavButton'; // Importamos el átomo NavButton
-// import styles from '../../style/StyleNavBar';
-
-// // NavBar es una molécula que junta varios botones y organiza su distribución en la pantalla.
-// const NavBar = ({ navigation }) => {
-//     return (
-//         <View style={styles.navbar}>
-//             {/* Creamos dos botones que navegan a las pantallas Home y About */}
-//             <NavButton imageSource={require('../../img/EnVentaIcon.png')} onPress={() => navigation.navigate('EnVenta')} />
-//             <NavButton imageSource={require('../../img/Dolar.png')} onPress={() => navigation.navigate('Dolar')} />
-//             <NavButton imageSource={require('../../img/EnAlquilerIconOp1.png')} onPress={() => navigation.navigate('EnAlquiler')} />
-//             <NavButton imageSource={require('../../img/SignUpIcon.png')} onPress={() => navigation.navigate('Acceder')} />
-//         </View>
-//     );
-// };
 // export default NavBar;
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text } from 'react-native';
-import NavButton from '../atoms/NavButton'; // Importamos el átomo NavButton
+import { useFocusEffect } from '@react-navigation/native'; // Importamos useFocusEffect
+import NavButton from '../atoms/NavButton'; 
 import styles from '../../style/StyleNavBar';
 
-const NavBar = ({ navigation }) => {
-    const [activeTab, setActiveTab] = useState('EnVenta'); // Guardamos la pestaña activa
+const NavBar = ({ navigation, route }) => {
+    const [activeTab, setActiveTab] = useState(route.name); // Inicializa con el nombre de la ruta actual
+
+    // Este useEffect es para actualizar el tab activo cuando cambie la ruta
+    useEffect(() => {
+        setActiveTab(route.name);
+    }, [route.name]);
+
+    // useFocusEffect para detectar el enfoque de la pantalla 'Index'
+    useFocusEffect(
+        React.useCallback(() => {
+            if (route.name === 'Index') {
+                setActiveTab('Index'); // Asegura que se actualice cuando se enfoque Index
+            }
+        }, [route.name])
+    );
 
     // Función para cambiar la pestaña activa y navegar
     const handleNavigation = (screen) => {
@@ -37,7 +35,7 @@ const NavBar = ({ navigation }) => {
                 <NavButton 
                     imageSource={require('../../img/EnVentaIcon.png')} 
                     onPress={() => handleNavigation('EnVenta')} 
-                    isActive={activeTab === 'EnVenta'} // Pasamos si está activo
+                    isActive={activeTab === 'EnVenta'} 
                 />
                 <Text style={activeTab === 'EnVenta' ? styles.activeLabel : styles.label}>En Venta</Text>
             </View>
@@ -50,6 +48,16 @@ const NavBar = ({ navigation }) => {
                     isActive={activeTab === 'Dolar'} 
                 />
                 <Text style={activeTab === 'Dolar' ? styles.activeLabel : styles.label}>Dólar</Text>
+            </View>
+
+            {/* Botón Home */}
+            <View style={styles.navButtonContainer}>
+                <NavButton 
+                    imageSource={require('../../img/EnAlquilerIconOp2.png')} 
+                    onPress={() => handleNavigation('Index')} 
+                    isActive={activeTab === 'Index'} 
+                />
+                <Text style={activeTab === 'Index' ? styles.activeLabel : styles.label}>Home</Text>
             </View>
 
             {/* Botón En Alquiler */}

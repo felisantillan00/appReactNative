@@ -4,12 +4,12 @@ import HeaderNav from '../components/organisms/HeaderNav'; // Importamos el enca
 import styles from '../style/StyleScreenEnVenta';
 import styleContainer from '../style/StyleScreenContainer'
 
-const EnVenta = ({navigation}) => {
+const EnVenta = ({navigation, route}) => {
     return (
         <View style={styleContainer.container}>
             <Text>Pantalla En Venta</Text>
             {/* Barra de Navegación en la parte inferior */}
-            <HeaderNav navigation={navigation} />
+            <HeaderNav navigation={navigation} route={route} />
         </View>
     );
 };

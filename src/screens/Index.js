@@ -6,7 +6,7 @@ import styles from '../style/StyleScreenIndex';
 import styleContainer from '../style/StyleScreenContainer'
 
 // Index es la pantalla principal
-const Index = ({ navigation }) => {
+const Index = ({navigation, route}) => {
     // Lista de imágenes para el carrusel
     const images = [
         "https://images.unsplash.com/photo-1559494007-9f5847c49d94",
@@ -22,7 +22,7 @@ const Index = ({ navigation }) => {
                 <Carousel images={images} /> 
             </View>
             {/* Barra de Navegación en la parte inferior */}
-            <HeaderNav navigation={navigation} />
+            <HeaderNav navigation={navigation} route={route} />
             {/* Asegúrate de envolver cualquier texto en un componente Text */}
         </View>
     );

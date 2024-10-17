@@ -6,7 +6,7 @@ import DolarView from '../components/organisms/DolarView';
 import styles from '../style/StyleScreenDolar';
 import stylesContainer from '../style/StyleScreenContainer';
 
-const Dolar = ({navigation}) => {
+const Dolar = ({navigation, route}) => {
     const [dolarOficial, setDolarOficial] = useState({ valor: null, fecha: null });
     const [dolarBlue, setDolarBlue] = useState({ valor: null, fecha: null });
     const [loading, setLoading] = useState(true);
@@ -46,7 +46,7 @@ const Dolar = ({navigation}) => {
                     dolarBlue={{ ...dolarBlue.valor, fecha: formatFecha(dolarBlue.fecha) }}
                 />
             )}
-            <HeaderNav navigation={navigation} />
+            <HeaderNav navigation={navigation} route={route} />
         </View>
     );
 };
