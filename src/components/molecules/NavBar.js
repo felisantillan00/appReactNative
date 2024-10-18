@@ -74,10 +74,10 @@ const NavBar = ({ navigation, route }) => {
             <View style={styles.navButtonContainer}>
                 <NavButton 
                     imageSource={require('../../img/SignUpIcon.png')} 
-                    onPress={() => handleNavigation('Acceder')} 
-                    isActive={activeTab === 'Acceder'} 
+                    onPress={() => handleNavigation('Login')} 
+                    isActive={activeTab === 'Login'} 
                 />
-                <Text style={activeTab === 'Acceder' ? styles.activeLabel : styles.label}>Acceder</Text>
+                <Text style={activeTab === 'Login' ? styles.activeLabel : styles.label}>Acceder</Text>
             </View>
         </View>
     );

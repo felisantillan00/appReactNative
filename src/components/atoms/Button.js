@@ -1,6 +1,6 @@
 import React from 'react';
 import {TouchableOpacity, Text} from 'react-native';
-import styles from '../../style/StyleBtnIngresar'
+import styles from '../../style/StyleButton'
 
 const PrimaryButton = ({ title, onPress }) => {
     return (

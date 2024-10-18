@@ -5,8 +5,9 @@ import Dolar from '../screens/Dolar';
 import EnVenta from '../screens/EnVenta';
 import Index from '../screens/Index';
 import EnAlquiler from '../screens/EnAlquiler';
-import Acceder from '../screens/Acceder';
+import Login from '../screens/Login';
 import Perfil from '../screens/Perfil'
+import Register from '../screens/Register'
 
 const Stack = createNativeStackNavigator();
 
@@ -18,19 +19,31 @@ const StackNavigator = () => {
     };
     return (
         <Stack.Navigator initialRouteName="Index">
-            <Stack.Screen name="Dolar" component={Dolar} />
-            <Stack.Screen name="EnVenta" component={EnVenta} />
+            <Stack.Screen 
+                name="Dolar" 
+                component={Dolar}  
+                options={{title: 'Cotizacion del dolar Actualizado' }} 
+            />
+            <Stack.Screen 
+                name="EnVenta" 
+                component={EnVenta} 
+                options={{title: 'Propiedades en venta' }} 
+            />
             <Stack.Screen 
                 name="Index" 
                 component={Index} 
                 options={{title: 'Inmobiliaria Rimoldi' }} 
             />
-            <Stack.Screen name="EnAlquiler" component={EnAlquiler} />
             <Stack.Screen 
-                name="Acceder" 
-                component={Acceder} 
+                name="EnAlquiler" 
+                component={EnAlquiler} 
+                options={{title: 'Propiedades en alquiler' }} 
+            />
+            <Stack.Screen 
+                name="Login" 
+                component={Login} 
                 options={{
-                    title: 'Acceder',
+                    title: 'Login',
                     headerRight: () => (
                         <TouchableOpacity onPress={toggleDarkMode} style={{ padding: 10 }}>
                             <Image 
@@ -56,7 +69,13 @@ const StackNavigator = () => {
                     ),
                 }} 
             />
+            <Stack.Screen
+                name="Register"
+                component={Register}
+                options={{title: 'Registrate como nuevo futuro cliente'}}
+            />
         </Stack.Navigator>
+
     );
 };
 

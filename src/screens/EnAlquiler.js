@@ -7,7 +7,7 @@ import styleContainer from '../style/StyleScreenContainer'
 const EnAlquiler = ({navigation, route}) => {
     return (
         <View style={styleContainer.container}>
-            <Text>Pantalla En Venta</Text>
+            <Text>Pantalla de alquileres</Text>
             {/* Barra de Navegación en la parte inferior */}
             <FooterNav navigation={navigation} route={route} />
         </View>

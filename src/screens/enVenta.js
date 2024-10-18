@@ -7,11 +7,10 @@ import styleContainer from '../style/StyleScreenContainer'
 const EnVenta = ({navigation, route}) => {
     return (
         <View style={styleContainer.container}>
-            <Text>Pantalla En Venta</Text>
+            <Text>Pantalla de ventas</Text>
             {/* Barra de Navegación en la parte inferior */}
             <FooterNav navigation={navigation} route={route} />
         </View>
     );
 };
 export default EnVenta;
-

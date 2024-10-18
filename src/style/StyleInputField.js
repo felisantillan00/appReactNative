@@ -1,30 +1,25 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     inputContainer: {
         marginBottom: 20,
-        borderBottomWidth: 1,
-        borderColor: '#ccc',
     },
     label: {
-        position: 'absolute',
-        left: 0,
-        top: 15,
-        fontSize: 16,
-        color: '#aaa',
-        transition: '0.2s',
+        fontSize: 14,
+        marginBottom: 5,
     },
-    labelFocused: {
-        top: -10,
-        fontSize: 12,
-        color: '#34495e',
+    inputWrapper: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        borderColor: '#ddd',
+        borderWidth: 1,
+        borderRadius: 8,
+        paddingHorizontal: 10,
+        paddingVertical: 8,
     },
     input: {
-        height: 40,
+        flex: 1,
         fontSize: 16,
-        paddingLeft: 0,
-        borderBottomWidth: 1,
-        borderBottomColor: '#34495e',
     },
 });
 export default styles;
