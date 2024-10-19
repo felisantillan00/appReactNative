@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 // Estilos del text
 const styles = StyleSheet.create({
     indicator: {
-        width: 15,
+        width: '100%',
         height: 15,
         borderRadius: 7.5,
         borderColor: 'white',

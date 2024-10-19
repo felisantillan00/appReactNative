@@ -32,12 +32,22 @@ const StackNavigator = () => {
             <Stack.Screen 
                 name="Index" 
                 component={Index} 
-                options={{title: 'Inmobiliaria Rimoldi' }} 
+                options={({ navigation }) => ({
+                    title: 'Inmobiliaria Rimoldi',
+                    headerRight: () => (
+                        <TouchableOpacity onPress={() => navigation.navigate('Dolar')} style={{ padding: 10 }}>
+                            <Image 
+                                source={require('../img/Dolar.png')} 
+                                style={{ width: 24, height: 24 }} 
+                            />
+                        </TouchableOpacity>
+                    ),
+                })} 
             />
             <Stack.Screen 
                 name="EnAlquiler" 
                 component={EnAlquiler} 
-                options={{title: 'Propiedades en alquiler' }} 
+                options={{title: 'Propiedades en alquiler'}} 
             />
             <Stack.Screen 
                 name="Login" 
