@@ -13,5 +13,6 @@ export default StyleSheet.create({
         width: MAX_WIDTH,
         height: 200,
         resizeMode: 'cover', // Ajusta la imagen al contenedor manteniendo la relación de aspecto
+        borderRadius: 20,
     },
 });
