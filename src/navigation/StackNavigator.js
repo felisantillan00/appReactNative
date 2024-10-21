@@ -6,10 +6,12 @@ import EnVenta from '../screens/EnVenta';
 import Index from '../screens/Index';
 import EnAlquiler from '../screens/EnAlquiler';
 import Login from '../screens/Login';
-import Perfil from '../screens/Perfil'
-import Register from '../screens/Register'
-import MoreProperty from '../screens/MoreProperty'
-
+import Perfil from '../screens/Perfil';
+import Register from '../screens/Register';
+import MoreProperty from '../screens/MoreProperty';
+import ProfileRent from '../screens/ProfileRent';
+import ProfileSale from '../screens/ProfileSale';
+import Contacto from '../screens/Contacto'
 const Stack = createNativeStackNavigator();
 
 const StackNavigator = () => {
@@ -90,9 +92,22 @@ const StackNavigator = () => {
                 component={MoreProperty}
                 options={{title: 'Propiedad xxx'}}
             />
+            <Stack.Screen
+                name="ProfileRent"
+                component={ProfileRent}
+                options={{title: 'Alquiler del perfil xxx'}}
+            />
+            <Stack.Screen
+                name="ProfileSale"
+                component={ProfileSale}
+                options={{title: 'Ventas del perfil xxx'}}
+            />
+            <Stack.Screen
+                name="Contacto"
+                component={Contacto}
+                options={{title: 'Contacto'}}
+            />
         </Stack.Navigator>
-
     );
 };
-
 export default StackNavigator;

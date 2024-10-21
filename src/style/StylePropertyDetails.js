@@ -46,5 +46,26 @@ const styles = StyleSheet.create({
     TextStyle:{
         marginLeft: 10,
     },
+    buttonContainer: {
+        flexDirection: 'row',       // Pone los botones en fila
+        justifyContent: 'space-between', // Espaciado entre botones
+        marginTop: 10,
+    },
+    button: {
+        flexDirection: 'row',       // Contenido del botón en fila
+        alignItems: 'center',       // Alinea la imagen y el texto
+        padding: 10,
+        backgroundColor: '#007BFF', // Color de fondo del botón
+        borderRadius: 5,
+        width: width * 0.4,
+    },
+    buttonText: {
+        color: '#fff',              // Color del texto del botón
+        marginLeft: 5,              // Espaciado entre la imagen y el texto
+    },
+    buttonIcon: {
+        width: 20,                  // Ancho de la imagen dentro del botón
+        height: 20,                 // Alto de la imagen dentro del botón
+    },
 });
 export default styles;
