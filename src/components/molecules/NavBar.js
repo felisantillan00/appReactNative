@@ -26,6 +26,16 @@ const NavBar = ({ navigation, route }) => {
     };
     return (
         <View style={styles.navbar}>
+            {/* Botón Home */}
+            <View style={styles.navButtonContainer}>
+                <NavButton
+                    imageSource={require('../../img/Home.png')}
+                    onPress={() => handleNavigation('Index')}
+                    isActive={activeTab === 'Index'}
+                />
+                <Text style={activeTab === 'Index' ? styles.activeLabel : styles.label}>Home</Text>
+            </View>
+
             {/* Botón En Venta */}
             <View style={styles.navButtonContainer}>
                 <NavButton
@@ -39,21 +49,11 @@ const NavBar = ({ navigation, route }) => {
             {/* Botón En Alquiler */}
             <View style={styles.navButtonContainer}>
                 <NavButton 
-                    imageSource={require('../../img/EnAlquilerIconOp1.png')} 
+                    imageSource={require('../../img/EnAlquilerIcon.png')} 
                     onPress={() => handleNavigation('EnAlquiler')} 
                     isActive={activeTab === 'EnAlquiler'} 
                 />
                 <Text style={activeTab === 'EnAlquiler' ? styles.activeLabel : styles.label}>En Alquiler</Text>
-            </View>
-
-            {/* Botón Home */}
-            <View style={styles.navButtonContainer}>
-                <NavButton
-                    imageSource={require('../../img/EnAlquilerIconOp2.png')}
-                    onPress={() => handleNavigation('Index')}
-                    isActive={activeTab === 'Index'}
-                />
-                <Text style={activeTab === 'Index' ? styles.activeLabel : styles.label}>Home</Text>
             </View>
 
             {/* Botón Acceder */}

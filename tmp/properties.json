@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "typeProperty": "casa",
+        "address": "123 Calle Falsa, Ciudad",
+        "price": 250000,
+        "images": [
+            "https://images.unsplash.com/photo-1559494007-9f5847c49d94",
+            "https://images.unsplash.com/photo-1506477331477-33d5d8b3dc85"
+        ],
+        "forSale": true,
+        "forRent": false
+    },
+    {
+        "id": 2,
+        "typeProperty": "departamento",
+        "address": "456 Avenida Real, Ciudad",
+        "price": 300000,
+        "images": [
+            "https://images.unsplash.com/photo-1505118380757-91f5f5632de0",
+            "https://images.unsplash.com/photo-1525183995014-bd94c0750cd5"
+        ],
+        "forSale": false,
+        "forRent": true
+    },
+    {
+        "id": 3,
+        "typeProperty": "casa",
+        "address": "789 Boulevard, Ciudad",
+        "price": 150000,
+        "images": [
+            "https://images.unsplash.com/photo-1505118380757-91f5f5632de0",
+            "https://images.unsplash.com/photo-1525183995014-bd94c0750cd5"
+        ],
+        "forSale": true,
+        "forRent": true
+    }
+]

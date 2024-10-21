@@ -4,7 +4,7 @@ import styles from '../../style/StylesIcon'; // Asegúrate de que la ruta sea co
 
 const Icon = ({ source }) => { // Recibimos el 'source' como un prop
     const { width } = Dimensions.get('window');
-    const iconSize = width * 0.08; // 5% del ancho de la pantalla
+    const iconSize = width * 0.08; // 8% del ancho de la pantalla
     return (
         <Image
             source={source} // Usamos la imagen que pasamos como parámetro

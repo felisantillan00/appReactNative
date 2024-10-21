@@ -8,6 +8,7 @@ import EnAlquiler from '../screens/EnAlquiler';
 import Login from '../screens/Login';
 import Perfil from '../screens/Perfil'
 import Register from '../screens/Register'
+import MoreProperty from '../screens/MoreProperty'
 
 const Stack = createNativeStackNavigator();
 
@@ -83,6 +84,11 @@ const StackNavigator = () => {
                 name="Register"
                 component={Register}
                 options={{title: 'Registrate como nuevo futuro cliente'}}
+            />
+            <Stack.Screen
+                name="MoreProperty"
+                component={MoreProperty}
+                options={{title: 'Propiedad xxx'}}
             />
         </Stack.Navigator>
 

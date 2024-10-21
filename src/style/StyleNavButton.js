@@ -1,4 +1,5 @@
-import { StyleSheet } from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
+const { width } = Dimensions.get('window');
 // Estilos del botón
 const styles = StyleSheet.create({
     button: {
@@ -12,8 +13,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#98FF98', // Fondo del botón, si lo necesitas
     },
     image: {
-        width: 20,
-        height: 20,
+        width: width * 0.07,
+        height: 25,
         resizeMode: 'contain',
     },
 });

@@ -38,5 +38,13 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
     },
+    InformationContainer:{
+        padding: 4,
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    TextStyle:{
+        marginLeft: 10,
+    },
 });
 export default styles;

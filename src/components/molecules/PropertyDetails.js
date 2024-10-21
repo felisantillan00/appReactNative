@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
+import { useNavigation } from '@react-navigation/native'; // Importa el hook de navegación
 import Icon from '../atoms/Icon'
 import Button from '../atoms/Button';
 import Carousel from '../organisms/Carousel'; // Asegúrate de importar el carrusel
@@ -7,9 +8,12 @@ import Pill from '../atoms/Pill';
 import styles from '../../style/StylePropertyDetails';
 
 const PropertyDetails = ({property, isLoggedIn }) => {
+    const navigation = useNavigation(); // Obtén el objeto navigation
+
     return (
         <View style={styles.propertyCard}>
             {/* Carrusel de imágenes para cada propiedad */}
+            <Text>{property.typeProperty}</Text>
             <Carousel images={property.images} />
             {/* Ubicación y dirección */}
             <View style={styles.locationContainer}>
@@ -21,18 +25,21 @@ const PropertyDetails = ({property, isLoggedIn }) => {
                 )}
                 {property.forRent && (
                     <Pill label="En Alquiler" color="#FF9800" />
-                )}            
+                )}     
             </View>
-            {/* Mostrar el precio solo si el usuario está logueado */}
+            <View style={styles.InformationContainer}>
+                <Icon source={require('../../img/BañoIcon.png')} />
+                <Text>1</Text>
+                <Icon source={require('../../img/DormitorioIcon.png')} />
+                <Text style={styles.TextStyle}>10</Text>
+                <Icon source={require('../../img/M2Icon.png')} />
+                <Text style={styles.TextStyle}>300</Text>
+            </View>
             {isLoggedIn && <Text style={styles.price}>{`$${property.price}`}</Text>}
+            {/* Mostrar el precio solo si el usuario está logueado */}
             {/* Botón de "Ver más" */}
-            <Button title="Ver más" onPress={() => console.log('Ver más de', property.id)} />
+            <Button title="Ver más" onPress={() => navigation.navigate('MoreProperty', { propertyId: property.id })}/>        
         </View>
     );
 };
 export default PropertyDetails;
-
-                // {/* Icono de en venta
-                // {property.forSale && <Icon source={require('../../img/Sale.png')}/>}
-                // {/* Icono de alquiler */}
-                // {property.forRent && <Icon source={require('../../img/PropEnAlquiler.png')}/>} */}
