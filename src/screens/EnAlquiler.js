@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, FlatList } from 'react-native';
-import PropertyDetails from '../components/molecules/PropertyDetails';
+import PropertyDetails from '../components/molecules/PropertyDetailsMin';
 import FooterNav from '../components/organisms/FooterNav';
 import styleContainer from '../style/StyleScreenContainer';
 import styles from '../style/StyleScreenIndex';

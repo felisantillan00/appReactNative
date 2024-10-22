@@ -1,5 +1,6 @@
 [
     {
+        "name": "Casa en barrio privado",
         "id": 1,
         "typeProperty": "casa",
         "address": "123 Calle Falsa, Ciudad",
@@ -9,7 +10,17 @@
             "https://images.unsplash.com/photo-1506477331477-33d5d8b3dc85"
         ],
         "forSale": true,
-        "forRent": false
+        "forRent": false,
+        "features": {
+            "bathrooms": 2,
+            "bedrooms": 3,
+            "size": 120
+        },
+        "description": "Esta es una casa increíble con todas las comodidades que necesitas para tu familia. Cuenta con amplias habitaciones, baños modernos y un patio amplio.Esta es una casa increíble con todas las comodidades que necesitas para tu familia. Cuenta con amplias habitaciones, baños modernos y un patio amplio.",
+        "location": {
+            "latitude": -34.6037,
+            "longitude": -58.3816
+        }
     },
     {
         "id": 2,
@@ -21,7 +32,17 @@
             "https://images.unsplash.com/photo-1525183995014-bd94c0750cd5"
         ],
         "forSale": false,
-        "forRent": true
+        "forRent": true,
+        "features": {
+            "bathrooms": 2,
+            "bedrooms": 3,
+            "size": 120
+        },
+        "description": "Esta es una casa increíble con todas las comodidades que necesitas para tu familia. Cuenta con amplias habitaciones, baños modernos y un patio amplio.",
+        "location": {
+            "latitude": -34.6037,
+            "longitude": -58.3816
+        }
     },
     {
         "id": 3,
@@ -33,6 +54,16 @@
             "https://images.unsplash.com/photo-1525183995014-bd94c0750cd5"
         ],
         "forSale": true,
-        "forRent": true
+        "forRent": true,
+        "features": {
+            "bathrooms": 2,
+            "bedrooms": 3,
+            "size": 120
+        },
+        "description": "Esta es una casa increíble con todas las comodidades que necesitas para tu familia. Cuenta con amplias habitaciones, baños modernos y un patio amplio.",
+        "location": {
+            "latitude": -34.6037,
+            "longitude": -58.3816
+        }
     }
 ]

@@ -21,7 +21,7 @@ const RegistrationForm = ({ onSubmit }) => {
     return (
         <View>
             <InputField
-                label={'Full Name'}
+                label={'Nombre y apellido'}
                 icon={
                     <Ionicons name="person-outline" size={20} color="#666" style={{ marginRight: 5 }} />
                 }
@@ -29,7 +29,7 @@ const RegistrationForm = ({ onSubmit }) => {
                 onChangeText={setName}
             />
             <InputField
-                label={'Email ID'}
+                label={'Email'}
                 icon={
                     <MaterialIcons name="alternate-email" size={20} color="#666" style={{ marginRight: 5 }} />
                 }
@@ -38,7 +38,7 @@ const RegistrationForm = ({ onSubmit }) => {
                 keyboardType="email-address"
             />
             <InputField
-                label={'Password'}
+                label={'Contraseña'}
                 icon={
                     <Ionicons name="ios-lock-closed-outline" size={20} color="#666" style={{ marginRight: 5 }} />
                 }
@@ -47,7 +47,7 @@ const RegistrationForm = ({ onSubmit }) => {
                 secureTextEntry
             />
             <InputField
-                label={'Confirm Password'}
+                label={'Confirmar Contraseña'}
                 icon={
                     <Ionicons name="ios-lock-closed-outline" size={20} color="#666" style={{ marginRight: 5 }} />
                 }
@@ -55,7 +55,7 @@ const RegistrationForm = ({ onSubmit }) => {
                 onChangeText={setConfirmPassword}
                 secureTextEntry
             />
-            <View style={{ flexDirection: 'row', borderBottomColor: '#ccc', borderBottomWidth: 1, paddingBottom: 8, marginBottom: 30 }}>
+            {/* <View style={{ flexDirection: 'row', borderBottomColor: '#ccc', borderBottomWidth: 1, paddingBottom: 8, marginBottom: 30 }}>
                 <Ionicons name="calendar-outline" size={20} color="#666" style={{ marginRight: 5 }} />
                 <TouchableOpacity onPress={() => setOpen(true)}>
                     <Text style={{ color: '#666', marginLeft: 5, marginTop: 5 }}>{dobLabel}</Text>
@@ -74,8 +74,8 @@ const RegistrationForm = ({ onSubmit }) => {
                     setDobLabel(date.toDateString());
                 }}
                 onCancel={() => setOpen(false)}
-            />
-            <PrimaryButton title="Register" onPress={handleSubmit} />
+            /> */}
+            <PrimaryButton title="Registrarme" onPress={handleSubmit} />
         </View>
     );
 };

@@ -17,7 +17,7 @@ const RegisterScreen = ({ navigation }) => {
     return (
         <SafeAreaView style={styleContainer.container}>
             <ScrollView contentContainerStyle={styleContainer.scrollContent} showsVerticalScrollIndicator={false}>
-                <Text style={stylesScreen.title}>Register</Text>
+                <Text style={stylesScreen.title}>Registrarse</Text>
                 <View style={stylesScreen.socialButtonsContainer}>
                     <TouchableOpacity style={stylesScreen.socialButton}>
                         <Image source={Google} style={{ height: 24, width: 24 }} />
@@ -29,12 +29,12 @@ const RegisterScreen = ({ navigation }) => {
                         <Image source={Instagram} style={{ height: 24, width: 24 }} />
                     </TouchableOpacity>
                 </View>
-                <Text style={stylesScreen.orText}>Or, register with email ...</Text>
+                <Text style={stylesScreen.orText}>O registrate con tu email ...</Text>
                 <RegistrationForm onSubmit={handleRegister} />
                 <View style={stylesScreen.loginLinkContainer}>
                     <Text>Ya estas registrado?</Text>
                     <TouchableOpacity onPress={() => navigation.goBack()}>
-                        <Text style={stylesScreen.loginLink}> Login</Text>
+                        <Text style={stylesScreen.loginLink}> Iniciar sesion</Text>
                     </TouchableOpacity>
                 </View>
             </ScrollView>

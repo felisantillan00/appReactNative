@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { View, FlatList } from 'react-native';
-import PropertyDetails from '../components/molecules/PropertyDetails';
+import PropertyDetails from '../components/molecules/PropertyDetailsMin';
 import FooterNav from '../components/organisms/FooterNav';
 import FloatingButton from '../components/atoms/FloatingButton';
 import propertiesData from '../../tmp/properties.json'; // Importa los datos del archivo JSON

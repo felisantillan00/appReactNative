@@ -4,9 +4,9 @@ const MAX_WIDTH = Dimensions.get('screen').width;
 const styles = StyleSheet.create({
     floatingButton: {
         position: 'absolute',
-        bottom: MAX_WIDTH * 0.2, // Ajusta la posición vertical
+        bottom: MAX_WIDTH * 0.21, // Ajusta la posición vertical
         right: 30,  // Ajusta la posición horizontal
-        width: MAX_WIDTH * 0.15,  // Ajusta el tamaño
+        width: MAX_WIDTH * 0.14,  // Ajusta el tamaño
         height: 60, // Ajusta el tamaño
         borderRadius: 30, // Para que sea circular
         justifyContent: 'center',

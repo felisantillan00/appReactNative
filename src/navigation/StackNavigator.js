@@ -8,10 +8,11 @@ import EnAlquiler from '../screens/EnAlquiler';
 import Login from '../screens/Login';
 import Perfil from '../screens/Perfil';
 import Register from '../screens/Register';
-import MoreProperty from '../screens/MoreProperty';
+import InfoProperty from '../screens/InfoProperty';
 import ProfileRent from '../screens/ProfileRent';
 import ProfileSale from '../screens/ProfileSale';
 import Contacto from '../screens/Contacto'
+import PropertyDetailsFull from '../components/molecules/PropertyDetailsFull';
 const Stack = createNativeStackNavigator();
 
 const StackNavigator = () => {
@@ -88,8 +89,8 @@ const StackNavigator = () => {
                 options={{title: 'Registrate como nuevo futuro cliente'}}
             />
             <Stack.Screen
-                name="MoreProperty"
-                component={MoreProperty}
+                name="InfoProperty"
+                component={InfoProperty}
                 options={{title: 'Propiedad xxx'}}
             />
             <Stack.Screen
@@ -106,6 +107,11 @@ const StackNavigator = () => {
                 name="Contacto"
                 component={Contacto}
                 options={{title: 'Contacto'}}
+            />
+            <Stack.Screen
+                name="PropertyDetailsFull"
+                component={PropertyDetailsFull}
+                options={{title: 'Informacion de propiedades'}}
             />
         </Stack.Navigator>
     );

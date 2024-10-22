@@ -3,8 +3,8 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        // justifyContent: 'flex-start', // Cambiar a 'flex-start' para que el contenido comience en la parte superior
         backgroundColor: '#f0f0f0',
+        paddingBottom: 80, /* Ajusta esto dependiendo de la altura del footer */
     },
     scrollContent: {
         flexGrow: 1,
