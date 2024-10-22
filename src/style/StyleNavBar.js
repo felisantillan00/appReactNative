@@ -2,16 +2,14 @@ import { StyleSheet } from 'react-native';
 // Estilos para organizar la barra de navegación
 const styles = StyleSheet.create({
     navbar: {
-        flexDirection: 'row', // Alinear los botones en una fila
-        justifyContent: 'space-around', // Espacio uniforme entre los botones
-        paddingVertical: 10, // Separación superior e inferior
-        backgroundColor: '#87CEEB', // Aseguramos que el fondo sea blanco si lo necesitas
-        borderTopWidth: 1, // Si deseas agregar un borde en la parte superior
-        borderColor: '#ccc', // Color del borde
-        alignItems: 'center', // Centrar verticalmente
-        overflow: 'hidden',    // Asegura que el contenido no sobresalga de las esquinas redondeadas
-        height: 75,
-        paddingHorizontal: 10
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        backgroundColor: '#87CEEB', // Color celeste para la barra
+        borderTopWidth: 0,
+        borderColor: '#ccc',
+        alignItems: 'center',
+        height: 80,
+        width: '100%', // Asegúrate de que ocupe el 100% del ancho
     },
     navButtonContainer: {
         alignItems: 'center',

@@ -1,17 +1,9 @@
-import { StyleSheet } from 'react-native';
-// Estilos del text
+import {StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
-    indicator: {
-        width: '100%',
-        height: 15,
-        borderRadius: 7.5,
-        borderColor: 'white',
-        borderWidth: 1,
-        marginHorizontal: 10,
-        marginBottom: 10,
-    },
-    activeIndicator: {
-        backgroundColor: 'white',
+    image: {
+        width: '100%',  // Ocupa todo el ancho del contenedor
+        height: '100%', // Ocupa toda la altura del contenedor
+        resizeMode: 'cover', // Mantiene la relación de aspecto
     },
 });
 export default styles;

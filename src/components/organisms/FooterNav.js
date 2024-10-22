@@ -5,7 +5,7 @@ import styles from '../../style/StyleFooterNav';
 
 const FooterNav = ({ navigation, route }) => {
     return (
-        <View style={styles.header}>
+        <View style={styles.navContainer}>
             <NavBar key={route.name} navigation={navigation} route={route} />
         </View>
     );

@@ -55,7 +55,6 @@ const NavBar = ({ navigation, route }) => {
                 />
                 <Text style={activeTab === 'EnAlquiler' ? styles.activeLabel : styles.label}>En Alquiler</Text>
             </View>
-
             {/* Botón Acceder */}
             <View style={styles.navButtonContainer}>
                 <NavButton

@@ -28,12 +28,12 @@ const PropertyDetails = ({property, isLoggedIn }) => {
                 )}     
             </View>
             <View style={styles.InformationContainer}>
-                <Icon source={require('../../img/BañoIcon.png')} />
                 <Text>1</Text>
-                <Icon source={require('../../img/DormitorioIcon.png')} />
+                <Icon source={require('../../img/BañoIcon.png')} />
                 <Text style={styles.TextStyle}>10</Text>
-                <Icon source={require('../../img/M2Icon.png')} />
+                <Icon source={require('../../img/DormitorioIcon.png')} />
                 <Text style={styles.TextStyle}>300</Text>
+                <Icon source={require('../../img/M2Icon.png')} />
             </View>
             {isLoggedIn && <Text style={styles.price}>{`$${property.price}`}</Text>}
             {/* Mostrar el precio solo si el usuario está logueado */}
