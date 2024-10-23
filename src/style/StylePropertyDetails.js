@@ -18,6 +18,11 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-start', // Para mantener el contenido al principio
         alignItems: 'flex-rigth', // Esto alineará el contenido a la derecha
     },
+    PriceAndText: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginBottom: 16,
+    },
     address: {
         fontSize: 18,
         fontWeight: 'bold',

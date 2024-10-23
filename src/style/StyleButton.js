@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
         borderRadius: 15,
         alignItems: 'center',
         backgroundColor: 'black',
+        margin: 5,
     },
     buttonText: {
         color: '#fff',

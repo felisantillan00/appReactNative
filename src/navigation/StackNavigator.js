@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { TouchableOpacity, Image } from 'react-native';
+import PropertyDetailsFull from '../components/molecules/PropertyDetailsFull';
 import Dolar from '../screens/Dolar';
 import EnVenta from '../screens/EnVenta';
 import Index from '../screens/Index';
@@ -12,7 +13,8 @@ import InfoProperty from '../screens/InfoProperty';
 import ProfileRent from '../screens/ProfileRent';
 import ProfileSale from '../screens/ProfileSale';
 import Contacto from '../screens/Contacto'
-import PropertyDetailsFull from '../components/molecules/PropertyDetailsFull';
+import Procedimiento from '../screens/Procedimiento';
+
 const Stack = createNativeStackNavigator();
 
 const StackNavigator = () => {
@@ -112,6 +114,11 @@ const StackNavigator = () => {
                 name="PropertyDetailsFull"
                 component={PropertyDetailsFull}
                 options={{title: 'Informacion de propiedades'}}
+            />
+            <Stack.Screen
+                name="Procedimiento"
+                component={Procedimiento}
+                options={{title: 'Procedimiento de operaciones'}}
             />
         </Stack.Navigator>
     );

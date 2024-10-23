@@ -20,7 +20,10 @@ const PropertyDetailsMin = ({ property, isLoggedIn }) => {
     return (
         <View style={styles.propertyCard}>
             {/* Carrusel de imágenes para cada propiedad */}
-            <Text>{property.typeProperty}</Text>
+            <View style={styles.PriceAndText}>
+                <Text>{property.typeProperty}</Text>
+                {isLoggedIn && <Text style={styles.price}>{`$${property.price}`}</Text>}
+            </View>
             <Carousel images={property.images} />
             {/* Ubicación y dirección */}
             <View style={styles.locationContainer}>
@@ -42,7 +45,6 @@ const PropertyDetailsMin = ({ property, isLoggedIn }) => {
                 <Text style={styles.TextStyle}>300</Text>
                 <Icon source={require('../../img/M2Icon.png')} />
             </View>
-            {isLoggedIn && <Text style={styles.price}>{`$${property.price}`}</Text>}
             {/* Mostrar el precio solo si el usuario está logueado */}
             {/* Botones "Ver más" y "Contactar" en la misma fila */}
             <View style={styles.buttonContainer}>

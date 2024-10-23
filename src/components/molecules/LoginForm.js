@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import InputField from '../atoms/InputField';
-import PrimaryButton from '../atoms/Button';
+import Button from '../atoms/Button';
 
 const LoginForm = ({ onSubmit, navigation }) => {
     const [username, setUsername] = useState('');
@@ -30,7 +30,7 @@ const LoginForm = ({ onSubmit, navigation }) => {
                 value={password}
                 onChangeText={setPassword}
             />
-            <PrimaryButton title="Ingresar" onPress={handleSubmit} />
+            <Button title="Ingresar" onPress={handleSubmit} />
             <Text style={{ textAlign: 'center', color: '#666', marginBottom: 30 }}>
             </Text>
             {/* Iconos de redes sociales */}
@@ -42,6 +42,16 @@ const LoginForm = ({ onSubmit, navigation }) => {
                 <Text>¿Nuevo en la app?</Text>
                 <TouchableOpacity onPress={() => navigation.navigate('Register')}>
                     <Text style={{ color: '#AD40AF', fontWeight: '700' }}> Regístrate</Text>
+                </TouchableOpacity>
+            </View>
+            <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
+                <TouchableOpacity onPress={() => navigation.navigate('Contacto')}>
+                    <Text style={{ color: '#AD40AF', fontWeight: '700' }}> Contactate</Text>
+                </TouchableOpacity>
+            </View>
+            <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
+                <TouchableOpacity onPress={() => navigation.navigate('Procedimiento')}>
+                    <Text style={{ color: '#AD40AF', fontWeight: '700' }}> Procedimiento</Text>
                 </TouchableOpacity>
             </View>
         </View>

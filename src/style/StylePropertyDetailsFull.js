@@ -60,18 +60,6 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 200,
     },
-    mapButton: {
-        backgroundColor: '#4CAF50',
-        padding: 10,
-        borderRadius: 5,
-        alignItems: 'center',
-        marginTop: 10,
-        borderRadius: 10,
-    },
-    mapButtonText: {
-        color: 'white',
-        fontWeight: 'bold',
-    },
     footerButton: {
         backgroundColor: '#2196F3',
         padding: 10,
