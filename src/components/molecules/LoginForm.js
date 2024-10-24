@@ -57,6 +57,4 @@ const LoginForm = ({ onSubmit, navigation }) => {
         </View>
     );
 };
-
 export default LoginForm;
-

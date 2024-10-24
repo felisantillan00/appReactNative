@@ -27,13 +27,6 @@ const Perfil = () => {
         Linking.openURL(emailUrl).catch(err => console.error('Error al abrir el correo', err));
     };
 
-    const openInGoogleMaps = () => {
-        const lat = -35.640307;
-        const lon = -63.761703;
-        const url = `https://www.google.com/maps/search/?api=1&query=${lat},${lon}`;
-        Linking.openURL(url);
-    };
-
     return (
         <View style={styles.container}>
             <Text style={styles.title}>Contáctanos</Text>

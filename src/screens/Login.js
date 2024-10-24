@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, ScrollView } from 'react-native';
+import {View, ScrollView} from 'react-native';
 import FooterNav from '../components/organisms/FooterNav';
 import LoginForm from '../components/molecules/LoginForm';
 import styleContainer from '../style/StyleScreenContainer';

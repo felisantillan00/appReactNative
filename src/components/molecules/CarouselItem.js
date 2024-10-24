@@ -1,13 +1,13 @@
 import React from 'react';
 import { View } from 'react-native';
-import CarouselImage from '../atoms/CarouselImage';
+import Image from '../atoms/Image';
 import CarouselIndicator from '../atoms/CarouselIndicator';
 
 const CarouselItem = ({ imageSource, isActive }) => {
     return (
         <View>
             {/* Componente que muestra la imagen */}
-            <CarouselImage source={imageSource} />
+            <Image source={imageSource} />
             {/* Componente que muestra el indicador de posición */}
             <CarouselIndicator isActive={isActive} />
         </View>

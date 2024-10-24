@@ -1,13 +1,13 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import {View} from 'react-native';
 import FooterNav from '../components/organisms/FooterNav'; // Importamos el encabezado
+import UserProfile from '../components/organisms/UserProfile';
 import styleContainer from '../style/StyleScreenContainer'
-import styles from '../style/StyleScreenPerfil';
 
 const Perfil = ({navigation, route}) => {
     return (
         <View style={styleContainer.container}>
-            <Text>Pantalla del perfil!</Text>
+            <UserProfile/>
             {/* Barra de Navegación en la parte inferior */}
             <FooterNav navigation={navigation} route={route} />
         </View>
