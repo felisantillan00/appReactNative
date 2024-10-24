@@ -7,7 +7,6 @@ import stylesScreen from '../style/StyleScreenLogin';
 
 const Login = ({ navigation, route }) => {
     const handleLogin = () => {
-        console.log("Login presionado");
         navigation.navigate('Perfil'); // Navega a la pantalla "Perfil"
     };
 

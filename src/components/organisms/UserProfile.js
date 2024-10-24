@@ -3,9 +3,10 @@ import styles from '../../style/StyleUserProfile';
 import ProfilePicture from '../molecules/ProfilePicture';
 import Username from '../molecules/Username';
 import Email from '../molecules/Email';
-import CameraComponent from '../../screens/CameraComponent';
+import { useNavigation } from '@react-navigation/native'; // Importa el hook de navegación
 
-const UserProfile = ({ user = {}, onUpdateProfilePic, onAddProperty, onSignOut }) => {
+const UserProfile = ({ user = {}, onUpdateProfilePic, onAddProperty, onSignOut}) => {
+    const navigation = useNavigation(); // Obtén el objeto navigation
     return (
         <View style={styles.container}>
             <View style={styles.profileContainer}>
@@ -13,7 +14,7 @@ const UserProfile = ({ user = {}, onUpdateProfilePic, onAddProperty, onSignOut }
                 <View style={styles.buttonContainer}>
                     <TouchableOpacity
                         style={[styles.button, styles.selfieButton]}
-                        onPress={CameraComponent}>
+                        onPress={() => navigation.navigate('CameraComponent')}>
                         <Text style={styles.buttonText}>Sacar selfie</Text>
                     </TouchableOpacity>
                     <TouchableOpacity

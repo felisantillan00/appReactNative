@@ -14,7 +14,7 @@ import ProfileRent from '../screens/ProfileRent';
 import ProfileSale from '../screens/ProfileSale';
 import Contacto from '../screens/Contacto'
 import Procedimiento from '../screens/Procedimiento';
-import Camera from '../screens/CameraComponent'
+import CameraComponent from '../screens/CameraComponent'
 import ProfilePicture from '../components/molecules/ProfilePicture';
 const Stack = createNativeStackNavigator();
 
@@ -127,8 +127,8 @@ const StackNavigator = () => {
                 options={{title: 'ProfilePicture'}}
             />
             <Stack.Screen
-                name="Camera"
-                component={Camera}
+                name="CameraComponent"
+                component={CameraComponent}
             />
         </Stack.Navigator>
     );
